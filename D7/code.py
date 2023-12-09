@@ -83,9 +83,6 @@ class Code(CodeBase):
 
         for line in self.lines:
             self.process_line(line)
-            h = self.hands[-1]
-            j = self.joker_hands[-1]
-            pass
 
         self.hands.sort(key=lambda x: x.cmp_key())
         self.joker_hands.sort(key=lambda x: x.cmp_key())
